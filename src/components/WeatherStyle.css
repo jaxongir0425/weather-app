@@ -1,0 +1,177 @@
+/* Weather Component Style */
+
+.site-content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+
+}
+
+.weather__container {
+    display: flex;
+    position: relative;
+}
+
+.weather__main {
+    padding: 70px;
+    /*background: linear-gradient(#358fc6, #a1cfe9);*/
+    background-image: url("../images/sunny.png");
+    width: 70%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.weather__main.cloud {
+    background-image: url("../images/cloud.png");
+}
+
+.weather__main.rain {
+    background-image: url("../images/rainy.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.weather__wrapper {
+    padding: 50px;
+    background: linear-gradient(#285f85, #768896);
+    width: 40%;
+}
+
+.weather__main_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.weather__degree {
+    margin: 0;
+    color: white;
+    font-size: 14vh;
+}
+
+.weather__country,
+.weather__condition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.country__name {
+    margin: 15px;
+    font-size: 50px;
+    color: white;
+}
+
+.country__date {
+    color: rgba(255, 255, 255, 0.733);
+    font-weight: bold;
+}
+
+.condition__img {
+    display: block;
+    margin: 8px;
+}
+
+.condition__name {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.733);
+    font-weight: bold;
+}
+
+.weather__search {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.search__input {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.search__btn {
+    padding: 32px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    cursor: pointer;
+}
+
+.country__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.country__item .country__link {
+    color: #b8b4b4;
+}
+
+.country__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.country__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.842);
+}
+
+.weather__details__title {
+    margin-top: 5vh;
+    color: white;
+}
+
+.weather__table {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather__tr {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+tbody {
+    flex: 3;
+}
+
+tbody > * {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.weather__td {
+    color: #b8b4b4;
+}
+
+.country__list::after,
+.weather__table::after {
+    margin-top: 20px;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #a59d9d;
+}
+
+.weather__search::after {
+    display: block;
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: #a59d9d;
+}
+
+/* Weather Component Style */
