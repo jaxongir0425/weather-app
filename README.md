@@ -5,4 +5,4 @@
 2. Redux
 
 # Deploy
-weather-app-0102.netlify.app
+https://weather-app-0102.netlify.app
